@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+:root {
+    --theme-background: #e4eaff;
+    --theme-box: #bae8e8;
+    --theme-text: #000;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background: var(--theme-background);
+    font-family: 'Ubuntu', sans-serif;
+    transition: all ease 0.5s;
+}
+
+#switch-btn{
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    width: 3rem;
+    height: 3rem;
+    font-size: 2rem;
+    border-radius: 50%;
+    padding-top: 3px;
+    border: none;
+    background: var(--theme-background);
+    color: var(--theme-text);
+}
+
+.box-area {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 6rem;
+    padding: 1rem;
+    max-width: 1000px;
+    flex-wrap: wrap;
+}
+
+.box {
+    border: 3px solid var(--theme-text);
+    background: var(--theme-box);
+    padding: 1.5rem;
+    border-radius: 15px;
+    max-width: 400px;
+}
+
+.box-head, .box-paragraph {
+    margin-bottom: 0.5rem;
+    text-align: center;
+    color: var(--theme-text)
+}
+
+#switch-btn:hover {
+    cursor: pointer;
+    border: 2px solid grey;
+}
+
+
+
